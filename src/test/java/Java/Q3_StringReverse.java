@@ -12,7 +12,7 @@ public class Q3_StringReverse {
         System.out.println(abc.delete(0,2));//substring
         System.out.println(abc.insert(0,"Pyhton"));
 
-        // second way
+        // 2. way
         String name="Selenium is easy for me";
         String reverse="";
         for(int i=name.length()-1;i>=0;i--){
@@ -20,6 +20,16 @@ public class Q3_StringReverse {
             reverse+=name.substring(i,i+1);
         }
         System.out.println(reverse);
+
+        //3. way
+        String word= "Today is cold";
+        String reverse1="";
+        String[]arr= word.split(" ");
+        for (int i = arr.length-1; i >=0 ; i--) {
+            reverse1+=arr[i]+" ";
+        }
+        System.out.println(reverse1);
+
     }
 
 }
